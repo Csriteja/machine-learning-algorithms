@@ -17,7 +17,7 @@ df = df.drop(['X4', 'X3'], 1)
 df.head()
 
 #Implementation
-from sklearn.cross_validation import train_test_split
+from sklearn.model_selection import train_test_split
 support = svm.SVC()
 X = df.values[:, 0:2]
 Y = df.values[:, 2]
