@@ -26,3 +26,9 @@ support.fit(trainX, trainY)
 print('Accuracy: \n', support.score(testX, testY))
 pred = support.predict(testX)
 
+#Visualization
+sns.set_context("notebook", font_scale=1.1)
+sns.set_style("ticks")
+sns.lmplot('X1','X2',scatter=True, fit_reg=False, data=df, hue='Y')
+plt.ylabel('X2')
+plt.xlabel('X1')
