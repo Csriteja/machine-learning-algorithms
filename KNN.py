@@ -13,7 +13,7 @@ import seaborn as sns
 #Getting Started
 from sklearn.neighbors import KNeighborsClassifier
 df = pd.read_csv('iris_df.csv')
-df.columns = ['X1', 'X2','X3', 'X4','X5']
+df.columns = ['X1', 'X2','X3', 'X4','Y']
 df = df.drop(['X4','X3'],1)
 df.head()
 
